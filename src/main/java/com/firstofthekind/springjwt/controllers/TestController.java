@@ -16,9 +16,11 @@ public class TestController {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     @ResponseBody
-    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+    @PreAuthorize("hasRole('USER')")
     public String currentUserName(Principal principal) {
-        return "Hello, " + userRepository.findByUsername(principal.getName()).get().getFirstname();
+        return "Hello, " +
+                userRepository.findByUsername(principal
+                        .getName()).get().getFirstname();
     }
 
 }

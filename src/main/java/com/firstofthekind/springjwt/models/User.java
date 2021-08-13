@@ -1,5 +1,9 @@
 package com.firstofthekind.springjwt.models;
 
+import javafx.beans.DefaultProperty;
+import net.bytebuddy.implementation.bind.annotation.Default;
+import org.springframework.beans.factory.annotation.Value;
+
 import java.util.HashSet;
 import java.util.Set;
 
