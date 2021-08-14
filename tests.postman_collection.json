@@ -22,12 +22,7 @@
 				],
 				"body": {
 					"mode": "formdata",
-					"formdata": [],
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					"formdata": []
 				},
 				"url": {
 					"raw": "localhost:8075/registration",
